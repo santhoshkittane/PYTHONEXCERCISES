@@ -6,7 +6,7 @@ var = 1.5
 #print(a.pop())
 print(f'The popped out value is {a.pop(a.index(var))}')
 print(a)
-a.append("hello world")
+a.append("hello world") 
 a+=["how are you","Good Bye"]
 print(a)
 a.insert(7,1.5)
