@@ -1,6 +1,6 @@
 inp = input("Input any String Value:")
 dictionary = dict()
-for i in inp:
+for i in list(inp):
     if i in dictionary:
         dictionary[i] += 1
     else:

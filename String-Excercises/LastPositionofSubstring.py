@@ -4,7 +4,9 @@ str = input("Enter a String:")
 last_pos = str1.rfind(str)
 print(f"Last Position of {str}:{last_pos}")
 first_pos = str1.find(str)
+print(f"First Position of {str}:{first_pos}")
 pos=input("Which position required:")
-last_pos = str1.find(str,int(pos)+1)
-print(f"{pos} Position of {str}:{last_pos}")
+pos=int(pos)-1
+last_pos = str1.find(str,int(pos))
+print(f"({pos}+1) Position of {str}:{last_pos}")
 
