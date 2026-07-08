@@ -3,7 +3,7 @@ import tldextract
 
 def urlmatch(str1):
     flag = True
-    if str1.startswith(("http","www")) and str1.endswith((".com",".co.in","/")):
+    if str1.startswith(("http","www","https")) and str1.endswith((".com",".co.in","/")):
             pass
     else:
         flag = False
