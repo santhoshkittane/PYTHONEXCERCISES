@@ -15,11 +15,11 @@ dependencies = [
     "qrcode>=8.2",
     "tldextract>=5.3.1",
     "openpyxl>=3.1.5",
-
+    "snowflake-connector-python>=4.6.0",
 
 ]
 [tool.pytest.ini_options]
 addopts = "-v --browser chromium"
 
 [tool.setuptools.packages.find]
-exclude = ["OOPS*", "test_data*"]
+exclude = ["OOPS*", "reports*", "test_data*"]
