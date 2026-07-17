@@ -16,7 +16,7 @@ while running:
         running = False
     elif user_input.lower() == 'list':
         # Print the entire list if they want to see everything
-        for zone in all_zones:
+        for zone in pytz.all_timezones:
             print(zone)
     elif user_input in pytz.all_timezones_set:
         # 3. If valid, fetch and show the current time in that timezone
@@ -24,6 +24,8 @@ while running:
         localized_time = datetime.now(tz)
         
         print(f"\nTimezone: {user_input}")
+  
+
         print(f"Current Date & Time: {localized_time.strftime('%Y-%m-%d %H:%M:%S %Z%z')}")
     else:
         print("\n❌ Invalid timezone name. Please make sure you match the capitalization (e.g., 'America/New_York').")
